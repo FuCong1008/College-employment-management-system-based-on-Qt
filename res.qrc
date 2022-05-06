@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Sheet/Picture/bg1.jpg</file>
+    </qresource>
+    <qresource prefix="/sheet">
+        <file>Sheet/SEMS.qss</file>
+    </qresource>
+</RCC>

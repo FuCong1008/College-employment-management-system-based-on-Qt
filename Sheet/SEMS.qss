@@ -1,0 +1,619 @@
+﻿/*******************登录界面Start*********************/
+
+QWidget#Login QFrame#frame
+{
+        border-image:url(:/image/Sheet/Picture/bg1.jpg);
+	border-radius:9px;
+}
+QWidget#Login QFrame#frame_2
+{
+	background:rgba(59,60,62,0.9);
+	border-radius:10px;
+}
+
+QWidget#Login QFrame#frame QPushButton#btn_exit
+{
+	font:bold 24px;
+	background:transparent;
+	color:#2A6FD3;
+	max-width:25px;
+	max-height:25px;
+	/*border-width:0px;*/
+	border-radius:5px;
+	border-style:outset;
+}
+QWidget#Login QFrame#frame QPushButton#btn_exit:hover,QPushButton#btn_exit:pressed
+{
+	font:bold 25px;
+	background:transparent;
+	color:red;
+	font:bold;
+}
+
+QWidget#Login QFrame#frame QFrame#frame_2 QLabel
+{
+	font:20px;
+	color:#2A6FD3;
+}
+
+QWidget#Login QFrame#frame QFrame#frame_2 QLabel#label_title
+{
+	font:bold 35px;
+	color:#2A6FD3;
+}
+
+QWidget#Login QFrame#frame QComboBox
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	background:rgba(255,255,255,0.2);
+	height:25px;
+	border:none;
+	border-radius:5px;
+}
+/*
+QWidget#Login QFrame#frame QComboBox QAbstractItemView
+{
+	border:none;
+	border-radius:5px;
+}
+
+QWidget#Login QFrame#frame QComboBox::drop-down
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	background:rgba(255,255,255,0.2);
+	weight:10px;
+	border-radius:2px;
+}
+QWidget#Login QFrame#frame QComboBox::down-arrow
+{
+	image:url(Sheet/Picture/down_arrow.png);
+}*/
+
+QWidget#Login QFrame#frame QFrame#frame_2 QLineEdit#le_pwd
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	background:rgba(255,255,255,0.2);
+	height:25px;
+	border:none;
+	border-radius:5px;
+}
+
+QWidget#Login QFrame#frame QFrame#frame_2 QRadioButton
+{
+	font:bold 15px;
+	color:#626262;
+}
+
+QWidget#Login QPushButton#btn_login,QPushButton#btn_register
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	height:30px;
+	background:transparent;
+	border-radius:4px;
+}
+QWidget#Login QPushButton#btn_login:hover,QPushButton#btn_login:pressed,
+QPushButton#btn_register:hover,QPushButton#btn_register:pressed
+{
+	font:bold 22px;
+	color:#2A6FD3;
+	border:1px solid #2A6FD3;
+}
+
+/********************登录界面End**********************/
+
+
+
+/*******************注册界面Start*********************/
+QWidget#RegisterUser QFrame#frame
+{
+	background:rgba(59,60,62,0.95);
+	border-radius:10px;
+}
+
+QWidget#RegisterUser QFrame#frame QLabel
+{
+	font:20px;
+	color:#2A6FD3;
+}
+
+QWidget#RegisterUser QFrame#frame QLineEdit
+{
+	font:20px;
+	font-weight:"黑体";
+	background:#FFFFFF;
+	border:none;
+	border-radius:4px;
+	color:#626262;
+}
+
+QWidget#RegisterUser QFrame#frame QRadioButton
+{
+	font:bold 17px;
+	color:#626262;
+}
+
+QWidget#RegisterUser QPushButton#btn_ack,QPushButton#btn_back
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	height:30px;
+	background:transparent;
+	border-radius:4px;
+}
+QWidget#RegisterUser QPushButton#btn_ack:hover,QPushButton#btn_ack:pressed,
+QPushButton#btn_back:hover,QPushButton#btn_back:pressed
+{
+	font:bold 22px;
+	color:#2A6FD3;
+	border:1px solid #2A6FD3;
+}
+
+/********************注册界面End**********************/
+
+
+/********************主界面Start**********************/
+
+QWidget#SwitchScreen QFrame#frame
+{
+	background:rgba(184,184,184,1);
+}
+
+QWidget#SwitchScreen QFrame#frame QFrame#frame_head
+{
+	background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1,
+									stop: 0 #4E4969, stop: 0.5 gray, stop: 1 #7A7297);/*左上角为原点(0,0),右下角为(1,1),水平方向为X轴,垂直方向为Y轴*/
+}
+QWidget#SwitchScreen QFrame#frame QFrame#frame_body
+{
+	background-color:#B8B8B8;
+}
+
+QWidget#SwitchScreen QFrame#frame_head QLabel#le_showTime
+{
+	font:bold 25px;
+	/*background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+									stop: 0 #2A6FD3, stop: 0.5 gray, stop: 1 #0A8283);
+	background-image:url(Sheet/Picture/icon1.jpg);
+	border-image:url(Sheet/Picture/icon1.jpg);*/
+	height:30px;
+	color:rgba(255,255,255,1);
+	border-radius:4px;
+	border-style:outset;
+}
+
+/**状态栏的所有工具按钮**/
+QWidget#SwitchScreen QFrame#frame_head QToolButton
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	height:30px;
+	background:rgba(42,111,211,0.6);
+	border-radius:4px;
+}
+QWidget#SwitchScreen QFrame#frame_head QToolButton:hover
+{
+	font:bold 20px;
+	color:#2A6FD3;
+	height:25px;
+	background:#3B3C3E;
+	border:1px solid #2A6FD3;
+	border-radius:4px;
+}
+QWidget#SwitchScreen QFrame#frame_head QToolButton:pressed
+{
+	font:bold 22px;
+	color:#2A6FD3;
+	height:25px;
+	background:#3B3C3E;
+	border:1px solid #2A6FD3;
+	border-radius:4px;
+}
+
+/*********************主界面End***********************/
+
+
+/*********************子界面Start*********************/
+
+QWidget#SwitchScreen QGroupBox#groupBox
+{
+	border:1px solid gray;
+	border-radius:5px;
+	margin-top:12px;
+	font-family:楷体;
+	font:bold 20px;
+}
+
+QWidget#SwitchScreen QGroupBox::title
+{
+	subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top left */
+	left:5px;
+	color:black;
+    padding: 0 3px;
+	border-radius:3px;
+    /*background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                        stop: 0 #2A6FD3, stop: 0.5 gray, stop: 1 #0A8283);*/
+}
+
+QWidget#SwitchScreen QLabel
+{
+	font:bold 16px;
+	height:20px;
+	color:rgba(0,0,0,1);
+	border-radius:4px;
+	border-style:outset;
+	margin-left:20px;
+}
+
+QWidget#SwitchScreen QLineEdit
+{
+	font:bold 16px;
+	/*background:rgba(215,215,215,0.6);
+	color:rgba(0,0,0,1);*/
+	height:25px;
+	border:none;
+	border-radius:3px;
+	min-width:200px;
+}
+
+/**在SwitchScreen界面下所有的查询按钮**/
+QWidget#SwitchScreen QPushButton#btn_query
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,0.7);
+	height:25px;
+	width:80px;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_query:hover
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_query:pressed
+{
+	font:bold 22px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+
+/**在SwitchScreen界面下所有添加子界面信息的按钮**/
+QWidget#SwitchScreen QPushButton#btn_addEmploymentInfo,QPushButton#btn_userInfo,QPushButton#btn_save,QPushButton#btn_saveToExcel,
+QPushButton#btn_addStu,QPushButton#btn_addCompany
+{
+	font:bold 15px;
+	color:rgba(255,255,255,1);
+	background:rgba(16,150,252,0.8);
+	height:25px;
+	width:105px;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_addEmploymentInfo:hover,QPushButton#btn_userInfo:hover,QPushButton#btn_save:hover,QPushButton#btn_saveToExcel:hover,
+QPushButton#btn_addStu:hover,QPushButton#btn_addCompany:hover
+{
+	font:bold 15px;
+	color:rgba(255,255,255,1);
+	background:rgba(11,116,196,1);
+	height:25px;
+	width:105px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_addEmploymentInfo:pressed,QPushButton#btn_userInfo:pressed,QPushButton#btn_save:pressed,QPushButton#btn_saveToExcel:pressed,
+QPushButton#btn_addStu:pressed,QPushButton#btn_addCompany:pressed
+{
+	font:bold 16px;
+	color:rgba(255,255,255,1);
+	background:rgba(11,116,196,1);
+	height:25px;
+	width:105px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+
+/**在EmploymentStatistics界面下按下QToolBUtton按钮的样式**/
+QWidget#EmploymentStatistics QToolButton
+{
+	font:bold 18px;
+	color:rgba(0,0,0,1);
+	height:25px;
+	background:transparent;
+	border-radius:4px;
+}
+QWidget#EmploymentStatistics QToolButton:hover
+{
+	font:bold 18px;
+	color:rgba(47,136,140,1);
+	background:transparent;
+	border:none;
+	border-bottom:1px solid rgba(89,159,113,1);
+	padding-bottom:2px;
+	border-radius:4px;
+}
+QWidget#EmploymentStatistics QToolButton:pressed
+{
+	font:bold 19px;
+	color:rgba(47,136,140,1);
+	background:transparent;
+	border:none;
+	border-bottom:1px solid rgba(89,159,113,1);
+	padding-bottom:8px;
+	border-radius:4px;
+}
+
+/*********************子界面End***********************/
+
+/*********************子->子界面Start***********************/
+
+QWidget#AddEmploymentInfo QFrame#frame_addEmploy,
+QWidget#AddUser QFrame#frame_addUser,
+QWidget#AddStudent QFrame#frame_addStu,
+QWidget#AddCompany QFrame#frame_addCom
+{
+	background:#B8B8B8;
+}
+
+QWidget#AddEmploymentInfo QFrame#frame_addEmploy QLineEdit,
+QWidget#AddUser QFrame#frame_addUser QLineEdit,
+QWidget#AddStudent QFrame#frame_addStu QLineEdit,
+QWidget#AddCompany QFrame#frame_addCom QLineEdit
+{
+	font:bold 16px;
+	/*background:rgba(215,215,215,0.6);
+	color:rgba(0,0,0,1);*/
+	height:25px;
+	border:none;
+	border-radius:3px;
+	min-width:200px;
+}
+
+/*********************子->子界面End***********************/
+
+/**************子界面所有下拉框和按钮Start***************/
+
+QWidget#SwitchScreen QComboBox#combox_province,QComboBox#combox_city,QComboBox#combox_identity,
+QWidget#AddEmploymentInfo QComboBox#combox_subProvince,QComboBox#combox_subCity,
+QWidget#AddCompany QComboBox#combox_showProvince,QComboBox#combox_showCity
+{
+	height:20px;
+	min-width:60px;
+}
+
+QWidget#SwitchScreen QComboBox#combox_faculty,QComboBox#combox_major,
+QWidget#AddEmploymentInfo QComboBox#combox_faculty,QComboBox#combox_stuMajor,
+QWidget#AddStudent QComboBox#combox_faculty,QComboBox#combox_stuMajor
+{
+	height:20px;
+	min-width:140px;
+}
+
+/**所有“提交”按钮的样式**/
+QWidget#AddEmploymentInfo QPushButton#btn_submit,
+QWidget#AddStudent QPushButton#btn_submit,
+QWidget#AddCompany QPushButton#btn_submit,
+QWidget#AddUser QPushButton#btn_submit
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,0.7);
+	height:25px;
+	width:80px;
+	border:none;
+	border-radius:10px;
+}
+QWidget#AddEmploymentInfo QPushButton#btn_submit:hover,
+QWidget#AddStudent QPushButton#btn_submit:hover,
+QWidget#AddCompany QPushButton#btn_submit:hover,
+QWidget#AddUser QPushButton#btn_submit:hover
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+QWidget#AddEmploymentInfo QPushButton#btn_submit:pressed,
+QWidget#AddStudent QPushButton#btn_submit:pressed,
+QWidget#AddCompany QPushButton#btn_submit:pressed,
+QWidget#AddUser QPushButton#btn_submit:pressed
+{
+	font:bold 21px;
+	color:rgba(255,255,255,1);
+	background:rgba(0,134,136,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+
+
+/**所有“重置”按钮的样式**/
+QWidget#SwitchScreen QPushButton#btn_reset,
+QWidget#AddEmploymentInfo QPushButton#btn_reset,
+QWidget#AddStudent QPushButton#btn_reset,
+QWidget#AddCompany QPushButton#btn_reset,
+QWidget#AddUser QPushButton#btn_reset
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(252,180,1, 0.8);
+	height:25px;
+	width:80px;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_reset:hover,
+QWidget#AddEmploymentInfo QPushButton#btn_reset:hover,
+QWidget#AddStudent QPushButton#btn_reset:hover,
+QWidget#AddCompany QPushButton#btn_reset:hover,
+QWidget#AddUser QPushButton#btn_reset:hover
+{
+	font:bold 20px;
+	color:rgba(255,255,255,1);
+	background:rgba(215,153,0,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+QWidget#SwitchScreen QPushButton#btn_reset:pressed,
+QWidget#AddEmploymentInfo QPushButton#btn_submit:pressed,
+QWidget#AddStudent QPushButton#btn_submit:pressed,
+QWidget#AddCompany QPushButton#btn_submit:pressed,
+QWidget#AddUser QPushButton#btn_submit:pressed,
+QWidget#AddEmploymentInfo QPushButton#btn_reset:pressed,
+QWidget#AddStudent QPushButton#btn_reset:pressed,
+QWidget#AddCompany QPushButton#btn_reset:pressed,
+QWidget#AddUser QPushButton#btn_reset:pressed
+{
+	font:bold 21px;
+	color:rgba(255,255,255,1);
+	background:rgba(215,153,0,1);
+	height:25px;
+	width:80px;
+	border:1px solid #2A6FD3;
+	border:none;
+	border-radius:10px;
+}
+
+/**************子界面所有下拉框和按钮End*****************/
+
+QMenu {
+    background-color : rgb(253,253,254);
+}
+QMenu::item {
+    color: rgb(0,0,0);
+    background-color:rgb(253,253,254);
+	/*padding-left: 5px;*/
+}
+QMenu::item:selected {
+    background-color : rgba(11,116,196,1);
+}
+
+/********************所有表格样式Start**********************/
+
+QWidget#SwitchScreen QTableWidget
+{
+	color:#DCDCDC;
+	background:#444444;
+	border:1px solid #242424;
+	alternate-background-color:#525252;
+	gridline-color:#242424;
+}
+ 
+QWidget#SwitchScreen QTableWidget::item:selected{
+	color:#DCDCDC;
+	background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #484848,stop:1 #383838);
+}
+ 
+QWidget#SwitchScreen QTableWidget::item:hover{
+	background:#5B5B5B;
+}
+
+QWidget#SwitchScreen QHeaderView::section{
+	text-align:center;
+	background:#5E5E5E;
+	padding:3px;
+	margin:0px;
+	color:#DCDCDC;
+	border:1px solid #242424;
+	border-left-width:0;
+}
+
+QWidget#SwitchScreen QScrollBar:vertical{
+	background:#484848;
+	padding:0px;
+	border-radius:6px;
+	max-width:12px;
+}
+ 
+QWidget#SwitchScreen QScrollBar::handle:vertical{
+	background:#CCCCCC;
+}
+ 
+QWidget#SwitchScreen QScrollBar::handle:hover:vertical,QScrollBar::handle:pressed:vertical{
+	background:#A7A7A7;
+}
+
+QWidget#SwitchScreen QScrollBar::sub-page:vertical{
+	background:444444;
+}
+ 
+QWidget#SwitchScreen QScrollBar::add-page:vertical{
+	background:5B5B5B;
+}
+ 
+QWidget#SwitchScreen QScrollBar::add-line:vertical{
+	background:none;
+}
+ 
+QWidget#SwitchScreen QScrollBar::sub-line:vertical{
+	background:none;
+}
+
+/*********************所有表格样式End***********************/
+
+
+/********************警告框Start**********************/
+QMessageBox
+{
+	background:rgba(184,184,184,1);
+	border-radius:10px;
+}
+
+QMessageBox QLabel
+{
+	font:bold 20px;
+	color:#2A6FD3;
+	height:20px;
+	border-style:outset;
+}
+
+QMessageBox QPushButton
+{
+	font:bold 20px;
+	color:#FFFFFF;
+	height:30px;
+	width:60px;
+	background:transparent;
+	border-radius:4px;
+}
+
+QMessageBox QPushButton:hover
+{
+	font:bold 20px;
+	color:#2A6FD3;
+	border:1px solid #2A6FD3;
+}
+QMessageBox QPushButton:pressed
+{
+	font:bold 22px;
+	color:#2A6FD3;
+	border:1px solid #2A6FD3;
+}
+/*********************警告框End***********************/
